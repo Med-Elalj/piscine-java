@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Star extends CelestialObject {
     private double magnitude;
     
@@ -21,13 +23,14 @@ public class Star extends CelestialObject {
 
     @Override
     public int hashCode() {
-        return Double.hashCode(magnitude);
+        return Objects.hash(name, x, y, z, magnitude);
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (!(obj instanceof Star)) return false;
+        if (!super.equals(obj)) return false;
         Star other = (Star) obj;
         return Double.compare(this.magnitude, other.magnitude) == 0;
     }
