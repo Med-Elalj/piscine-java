@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class main {
+public class ExerciseRunner {
     public static void main(String[] args) throws IOException {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);

@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class main {
+public class ExerciseRunner {
     public static void main(String[] args) throws IOException {
         String input = "input file test\n";
         ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());

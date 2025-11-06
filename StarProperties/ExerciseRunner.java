@@ -1,4 +1,4 @@
-public class main {
+public class ExerciseRunner {
 
     public static void main(String[] args) {
         CelestialObject celestialObject = new CelestialObject();

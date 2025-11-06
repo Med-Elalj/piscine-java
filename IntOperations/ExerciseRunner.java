@@ -1,4 +1,4 @@
-public class main {
+public class ExerciseRunner {
     public static void main(String[] args) {
         System.out.println("Add");
         System.out.println(IntOperations.addTwoIntegers(1, 2));
