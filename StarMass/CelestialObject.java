@@ -4,7 +4,7 @@ public class CelestialObject {
     public double x;
     public double y;
     public double z;
-    public int mass;
+    private int mass;
     public String name;
     
     public static final double KM_IN_ONE_AU = 150000000.0;
