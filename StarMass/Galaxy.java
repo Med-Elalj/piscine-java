@@ -32,9 +32,9 @@ public class Galaxy {
             }
         }
 
-        massRepartition.put("Others", totalMassOthers);
-        massRepartition.put("Planets", totalMassPlanets);
-        massRepartition.put("Stars", totalMassStars);
+        massRepartition.put("Other", totalMassOthers);
+        massRepartition.put("Planet", totalMassPlanets);
+        massRepartition.put("Star", totalMassStars);
 
         return massRepartition;
     }
