@@ -14,7 +14,10 @@ public class Sorcerer extends Character implements Healer {
     }
 
     @Override
-    public void heal(Character character) {
+    public void heal(Character character) throws DeadCharacterException {
+        if (!this.isAlive()) {
+            throw new DeadCharacterException(this);
+        }
         if (character != null) {
             int newHealth = character.getCurrentHealth() + healCapacity;
             if (newHealth > character.getMaxHealth()) {
