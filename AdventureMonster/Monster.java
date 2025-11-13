@@ -7,9 +7,9 @@ public class Monster extends Character {
     @Override
     public String toString() {
         if (this.isAlive()) {
-            return this.getName() + " is a monster with " + this.getCurrentHealth() + " HP.";
+            return this.getName() + " is a monster with " + this.getCurrentHealth() + " HP";
         } else {
-            return this.getName() + " is a monster and is dead.";
+            return this.getName() + " is a monster and is dead";
         }
     }
 
