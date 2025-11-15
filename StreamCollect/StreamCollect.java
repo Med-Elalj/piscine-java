@@ -22,6 +22,6 @@ public class StreamCollect {
     public static String orderAndConcatWithSharp(Stream<String> s) {
         String joined = s.sorted()
                 .collect(Collectors.joining(" # "));
-        return "##{" + joined + "}";
+        return "{" + joined + "}";
     }
 }
